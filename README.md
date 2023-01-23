@@ -2,3 +2,4 @@
 Atividades feitas nos cursos de Javascript e React do FreeCodeCamp
 
 * [Primeira atividade](https://juliaklzs.github.io/javascript-freeCodeCamp/project1/index.html): página que registra entradas (em um ônibus, por exemplo).
+* [Segunda atividade](https://juliaklzs.github.io/javascript-freeCodeCamp/project2/index.html): jogo de BlackJack.
