@@ -7,7 +7,20 @@ let message = "";
 let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
+let playerEl = document.getElementById("player-el");
 
+/*let player = {
+    name: "Julia",
+    chips: 5,
+    winGame: function addChips() {
+        chips += 10;
+        playerEl.textContent = player.name + ": $" + player.chips;
+    },
+    loseGame: function removeChips() {
+        chips -=  5;
+        playerEl.textContent = player.name + ": $" + player.chips;
+    },
+}*/
 
 function getRandomCard() {
     let randomCard = Math.floor(Math.random() * 13) + 1;
@@ -62,4 +75,3 @@ function addCard() {
         window.alert("To get a new card, start the game (again).");
     }
 }
-
