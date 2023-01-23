@@ -50,11 +50,16 @@ function startGame() {
 }
 
 function addCard() {
-    newCard = getRandomCard();
 
-    cards.push(newCard);
-    sum += newCard;
+    if (isAlive === true && hasBlackJack === false) {
+        newCard = getRandomCard();
 
-    renderGame();
+        cards.push(newCard);
+        sum += newCard;
+
+        renderGame();
+    } else {
+        window.alert("To get a new card, start the game (again).");
+    }
 }
 
