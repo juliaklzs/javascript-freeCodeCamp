@@ -58,7 +58,6 @@ function startGame() {
             isAlive = false;
             message = ("You've lost");
         }
-
         messageEl.textContent = message;
 }
 
