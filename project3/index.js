@@ -5,14 +5,17 @@ let myLinks = [];
 
 inputBtn.addEventListener("click", function() {
     myLinks.push(inputEl.value);
-    renderLeads();
+    renderLinks();
     inputEl.value = "";
 })
 
-function renderLeads() {
+function renderLinks() {
     let listItems = "";
     for (let i=0; i < myLinks.length; i++) {
-        listItems += "<li>" + myLinks[i] + "</li>";
+        listItems += `
+            <li>
+             <a target='_blank' href='${myLinks[i]}'>${myLinks[i]}</a>
+            </li>`;
     }
     ulEl.innerHTML = listItems;
 }
