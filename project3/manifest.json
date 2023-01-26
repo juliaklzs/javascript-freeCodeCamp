@@ -1,9 +1,12 @@
 {
     "manifest_version": 3,
     "version": "1.0",
-    "name": "Link tracker",
+    "name": "Link Tracker",
     "action": {
         "default_popup": "index.html",
         "default_icon": "globo.png"
-    }
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
